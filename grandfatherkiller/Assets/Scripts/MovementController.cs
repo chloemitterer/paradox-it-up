@@ -37,11 +37,10 @@ public class MovementController : MonoBehaviour {
 			moveDirection *= maxSpeed;
 
 			if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
-			{
-				Rigidbody clone;
-				nextFire = Time.time + fireRate;
-				clone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as Rigidbody;
-				clone.gameObject.GetComponent<ShotController>().SetVelocity();
+			{	
+				nextFire = Time.time + 1.0f / fireRate;
+				GameObject zBullet = (GameObject)Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+				zBullet.GetComponent<ShotController> ().SetVelocity ();
 				
 				
 			}

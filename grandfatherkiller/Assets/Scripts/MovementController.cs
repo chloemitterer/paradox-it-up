@@ -21,11 +21,17 @@ public class MovementController : MonoBehaviour {
 	private int health;
 	private bool dead;
 
+	Vector3 initialPosition;
+	Quaternion initialRotation;
+
 
 	// Use this for initialization
 	void Start () {
 		health = maxHealth;
 		dead = false;
+
+		initialPosition = gameObject.transform.position;
+		initialRotation = gameObject.transform.rotation;
 	}
 	
 	// Update is called once per frame
@@ -64,6 +70,10 @@ public class MovementController : MonoBehaviour {
 		}
 		controller.Move(moveDirection * Time.deltaTime);
 		transform.forward = facingDirection;
+
+		if (dead) {
+			die ();
+		}
 	}
 
 	void OnTriggerEnter (Collider other)
@@ -76,8 +86,9 @@ public class MovementController : MonoBehaviour {
 				if (health <= 0) {
 					dead = true;
 				}
+				Destroy(other.transform.parent.gameObject);
 			}
-			Destroy(other.transform.parent.gameObject);
+
 		} else if (other.tag == "Slash") {
 			if (other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber != playerNumber) {
 				health -= 1;
@@ -86,5 +97,20 @@ public class MovementController : MonoBehaviour {
 				}
 			}
 		} 
+	}
+
+	void die(){
+		gameObject.SetActive (false);
+		Invoke ("respawn", 2);
+	}
+
+	void respawn(){
+		gameObject.SetActive (true);
+		dead = false;
+		health = maxHealth;
+
+
+		gameObject.transform.position = initialPosition;
+		gameObject.transform.rotation = initialRotation;
 	}
 }

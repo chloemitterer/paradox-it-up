@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using InControl;
 
-[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class MovementController : MonoBehaviour {
 	public float maxSpeed = 5.0f;
 	public int playerNumber = 1;
@@ -37,7 +37,7 @@ public class MovementController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		CharacterController controller = GetComponent<CharacterController>();
+		NavMeshAgent controller = GetComponent<NavMeshAgent>();
 
 		var inputDevice = (InputManager.Devices.Count + 1 > playerNumber) ? InputManager.Devices[playerNumber - 1] : null;
 		if (inputDevice != null) {

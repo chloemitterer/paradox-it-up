@@ -13,6 +13,7 @@ public class MovementController : MonoBehaviour {
 	public GameObject shot;
 	public GameObject slash;
 	public Transform shotSpawn;
+	public Transform meleeSpawn;
 	public float fireTime = 0.5f;
 	public float meleeTime = 0.5f;
 	public int maxHealth = 3;
@@ -61,7 +62,7 @@ public class MovementController : MonoBehaviour {
 			// Melee
 			if (inputDevice.Action2.WasPressed && Time.time > nextAttack) {
 				nextAttack = Time.time + meleeTime;
-				GameObject zSlash = (GameObject)Instantiate (slash, shotSpawn.position, shotSpawn.rotation);
+				GameObject zSlash = (GameObject)Instantiate (slash, meleeSpawn.position, meleeSpawn.rotation);
 				zSlash.transform.Rotate(transform.up * -90.0f);
 				zSlash.GetComponent<SlashController> ().SetAngularVelocity ();
 				zSlash.GetComponent<SlashController> ().playerNumber = playerNumber;

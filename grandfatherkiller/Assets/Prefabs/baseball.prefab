@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11493904}
   - 54: {fileID: 5493904}
   m_Layer: 0
-  m_Name: Slash
+  m_Name: baseball
   m_TagString: Slash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

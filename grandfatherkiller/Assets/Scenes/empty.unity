@@ -74,6 +74,33 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 19400000, guid: 85d0849a0a54c5f4ba45aefbc6018f4a, type: 2}
+--- !u!1 &178710362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 178710363}
+  m_Layer: 0
+  m_Name: meleeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &178710363
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178710362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: .479999989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1572494593}
+  m_RootOrder: 3
 --- !u!1 &373854292
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +136,7 @@ MonoBehaviour:
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: f48f765b3e0f2a746ade4e0834b473e5, type: 2}
   shotSpawn: {fileID: 1291600512}
+  meleeSpawn: {fileID: 1864168039}
   fireTime: 1
   meleeTime: .5
   maxHealth: 3
@@ -166,6 +194,7 @@ Transform:
   - {fileID: 1222678419}
   - {fileID: 477550909}
   - {fileID: 1291600512}
+  - {fileID: 1864168039}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &403249362
@@ -189,7 +218,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 403249362}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: -4.37113883e-08}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 1.10000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -520,7 +549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &724658350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +712,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1001 &917420816
 Prefab:
   m_ObjectHideFlags: 0
@@ -1076,6 +1105,7 @@ MonoBehaviour:
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: f48f765b3e0f2a746ade4e0834b473e5, type: 2}
   shotSpawn: {fileID: 403249363}
+  meleeSpawn: {fileID: 178710363}
   fireTime: 1
   meleeTime: .5
   maxHealth: 3
@@ -1133,7 +1163,35 @@ Transform:
   - {fileID: 744914689}
   - {fileID: 403249363}
   - {fileID: 465917917}
+  - {fileID: 178710363}
   m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!1 &1864168038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1864168039}
+  m_Layer: 0
+  m_Name: meleeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1864168039
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1864168038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: .479999989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 373854298}
   m_RootOrder: 3
 --- !u!1 &1895997933
 GameObject:

@@ -17,6 +17,7 @@ public class MovementController : MonoBehaviour {
 	public float fireTime = 0.5f;
 	public float meleeTime = 0.5f;
 	public int maxHealth = 3;
+	public float respawnTime = 2.0f;
 	
 	private float nextAttack;
 	private int health;
@@ -102,7 +103,7 @@ public class MovementController : MonoBehaviour {
 
 	void die(){
 		gameObject.SetActive (false);
-		Invoke ("respawn", 2);
+		Invoke ("respawn", respawnTime);
 	}
 
 	void respawn(){

@@ -6,6 +6,7 @@ public class granddad : MonoBehaviour {
 	public int maxHealth = 3;
 	private int health;
 	private bool dead;
+	public int grandadNum;
 
 	// Use this for initialization
 	void Start () {
@@ -47,6 +48,15 @@ public class granddad : MonoBehaviour {
 	
 	void die(){
 		gameObject.SetActive (false);
+		if (grandadNum == 1) {
+			//game over, player 2 wins
+			PlayerPrefs.SetInt("Winner", 2);
+			Application.LoadLevel("end");
+		}else if (grandadNum == 2) {
+			//game over, player 1 wins
+			PlayerPrefs.SetInt("Winner", 1);
+			Application.LoadLevel("end");
+		}
 
 	}
 }

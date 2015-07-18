@@ -661,6 +661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  grandadNum: 2
+  playerNum: 0
+  winner: 0
 --- !u!23 &817302394
 Renderer:
   m_ObjectHideFlags: 0
@@ -1269,6 +1272,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  grandadNum: 1
+  playerNum: 0
+  winner: 0
 --- !u!23 &1996344481
 Renderer:
   m_ObjectHideFlags: 0

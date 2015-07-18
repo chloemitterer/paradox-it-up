@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using InControl;
 
@@ -28,7 +28,7 @@ public class MovementController : MonoBehaviour {
 		var inputDevice = (InputManager.Devices.Count + 1 > playerNumber) ? InputManager.Devices[playerNumber - 1] : null;
 		if (inputDevice != null) {
 			moveDirection = Vector3.Normalize(new Vector3(inputDevice.Direction.X, 0, inputDevice.Direction.Y));
-			if (inputDevice.RightStick.X != 0 && inputDevice.RightStick.Y != 0) {
+			if (inputDevice.RightStick.X != 0 || inputDevice.RightStick.Y != 0) {
 				facingDirection = Vector3.Normalize(new Vector3(inputDevice.RightStick.X, 0, inputDevice.RightStick.Y));
 			} else if (moveDirection != Vector3.zero) {
 				facingDirection = moveDirection;
@@ -36,6 +36,7 @@ public class MovementController : MonoBehaviour {
 			// moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= maxSpeed;
 
+			//firing
 			if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
 			{	
 				nextFire = Time.time + 1.0f / fireRate;
@@ -47,9 +48,5 @@ public class MovementController : MonoBehaviour {
 		}
 		controller.Move(moveDirection * Time.deltaTime);
 		transform.forward = facingDirection;
-
-		//firing
-
-
 	}
 }

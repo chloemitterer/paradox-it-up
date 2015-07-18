@@ -106,6 +106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 8
   playerNumber: 1
+  shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
+  shotSpawn: {fileID: 373854298}
+  fireRate: 3
 --- !u!143 &373854295
 CharacterController:
   m_ObjectHideFlags: 0
@@ -563,6 +566,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 8
   playerNumber: 2
+  shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
+  shotSpawn: {fileID: 1572494593}
+  fireRate: 3
 --- !u!143 &1572494590
 CharacterController:
   m_ObjectHideFlags: 0

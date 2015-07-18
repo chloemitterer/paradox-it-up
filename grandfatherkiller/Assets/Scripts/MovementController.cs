@@ -17,6 +17,8 @@ public class MovementController : MonoBehaviour {
 	public float fireTime = 0.5f;
 	public float meleeTime = 0.5f;
 	public int maxHealth = 3;
+	public AudioClip sfxShot;
+	public AudioClip sfxMelee;
 	
 	private float nextAttack;
 	private int health;
@@ -24,6 +26,8 @@ public class MovementController : MonoBehaviour {
 
 	Vector3 initialPosition;
 	Quaternion initialRotation;
+
+
 
 
 	// Use this for initialization
@@ -57,6 +61,7 @@ public class MovementController : MonoBehaviour {
 				GameObject zBullet = (GameObject)Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 				zBullet.GetComponent<ShotController> ().SetVelocity ();
 				zBullet.GetComponent<ShotController> ().playerNumber = playerNumber;
+				AudioSource.PlayClipAtPoint (sfxShot, shotSpawn.position, 0.5f);
 			}
 
 			// Melee
@@ -66,7 +71,9 @@ public class MovementController : MonoBehaviour {
 				zSlash.transform.Rotate(transform.up * -90.0f);
 				zSlash.GetComponent<SlashController> ().SetAngularVelocity ();
 				zSlash.GetComponent<SlashController> ().playerNumber = playerNumber;
+				AudioSource.PlayClipAtPoint (sfxMelee, shotSpawn.position, 0.5f);
 				zSlash.transform.parent = transform;
+
 			}
 		}
 		controller.Move(moveDirection * Time.deltaTime);

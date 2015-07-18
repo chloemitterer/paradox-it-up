@@ -107,8 +107,10 @@ MonoBehaviour:
   maxSpeed: 8
   playerNumber: 1
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
+  slash: {fileID: 193902, guid: f48f765b3e0f2a746ade4e0834b473e5, type: 2}
   shotSpawn: {fileID: 373854298}
-  fireRate: 3
+  fireTime: 1
+  meleeTime: .5
 --- !u!143 &373854295
 CharacterController:
   m_ObjectHideFlags: 0
@@ -220,10 +222,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 26
+  far clip plane: 100
   field of view: 77.2998657
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -241,8 +243,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 529077897}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 25, z: 0}
+  m_LocalRotation: {x: .258819044, y: 0, z: 0, w: .965925813}
+  m_LocalPosition: {x: 0, y: 28.7999992, z: -51.0999985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -459,7 +461,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1083790969}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: .382683486, z: 0, w: .923879564}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
@@ -567,8 +569,10 @@ MonoBehaviour:
   maxSpeed: 8
   playerNumber: 2
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
+  slash: {fileID: 193902, guid: f48f765b3e0f2a746ade4e0834b473e5, type: 2}
   shotSpawn: {fileID: 1572494593}
-  fireRate: 3
+  fireTime: 1
+  meleeTime: .5
 --- !u!143 &1572494590
 CharacterController:
   m_ObjectHideFlags: 0
@@ -633,7 +637,7 @@ GameObject:
   - 4: {fileID: 1895997935}
   - 114: {fileID: 1895997934}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: InControl Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,10 +11,12 @@ public class MovementController : MonoBehaviour {
 	private Vector3 facingDirection = Vector3.forward;
 
 	public GameObject shot;
+	public GameObject slash;
 	public Transform shotSpawn;
-	public float fireRate;
+	public float fireTime;
+	public float meleeTime;
 	
-	private float nextFire;
+	private float nextAttack;
 
 	// Use this for initialization
 	void Start () {
@@ -36,14 +38,20 @@ public class MovementController : MonoBehaviour {
 			// moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= maxSpeed;
 
-			//firing
-			if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
+			// Firing
+			if (inputDevice.RightTrigger.IsPressed && Time.time > nextAttack)
 			{	
-				nextFire = Time.time + 1.0f / fireRate;
+				nextAttack = Time.time + fireTime;
 				GameObject zBullet = (GameObject)Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 				zBullet.GetComponent<ShotController> ().SetVelocity ();
-				
-				
+			}
+
+			// Melee
+			if (inputDevice.Action2.WasPressed && Time.time > nextAttack) {
+				nextAttack = Time.time + meleeTime;
+				GameObject zBullet = (GameObject)Instantiate (slash, shotSpawn.position, shotSpawn.rotation);
+				zBullet.GetComponent<ShotController> ().SetVelocity ();
+				zBullet.transform.parent = transform;
 			}
 		}
 		controller.Move(moveDirection * Time.deltaTime);

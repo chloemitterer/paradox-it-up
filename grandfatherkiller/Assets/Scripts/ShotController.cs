@@ -3,11 +3,12 @@ using System.Collections;
 
 public class ShotController : MonoBehaviour {
 
-	public int shotSpeed;
+	public float shotSpeed;
+	public float lifeTime;
 
 	// Use this for initialization
 	void Start () {
-	
+		Destroy(gameObject, lifeTime);
 	}
 	
 	public void SetVelocity ()

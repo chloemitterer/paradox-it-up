@@ -2,9 +2,8 @@
 using System.Collections;
 
 [RequireComponent(typeof(NavMeshAgent))]
-public class CivilianAI : MonoBehaviour {
+public class RandomStart : MonoBehaviour {
 
-	public float searchRange = 5.0f;
 	bool RandomPoint(Vector3 center, float range,  out Vector3 result) {
 		for (int i = 0; i < 30; i++) {
 			Vector3 randomPoint = center + Random.insideUnitSphere * range;
@@ -21,15 +20,15 @@ public class CivilianAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Vector3 startPos;
+		for (int i = 0; i < 10; i++) {
+			RandomPoint(transform.position, 10.0f, out startPos);
+			transform.position = startPos;
+		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		NavMeshAgent agent = GetComponent<NavMeshAgent>();
-		if (agent.velocity.magnitude < 0.01) {
-			Vector3 destination;
-			RandomPoint(transform.position, searchRange, out destination);
-			agent.destination = destination;
-		}
-	}	
+	
+	}
 }

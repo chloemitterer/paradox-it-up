@@ -33,7 +33,7 @@ public class MovementController : MonoBehaviour {
 			} else {
 				facingDirection = moveDirection;
 			}
-			moveDirection = transform.TransformDirection(moveDirection);
+			// moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= maxSpeed;
 		}
 		controller.Move(moveDirection * Time.deltaTime);

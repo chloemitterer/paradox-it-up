@@ -35,21 +35,22 @@ public class MovementController : MonoBehaviour {
 			}
 			// moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= maxSpeed;
+
+			if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
+			{
+				Rigidbody clone;
+				nextFire = Time.time + fireRate;
+				clone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as Rigidbody;
+				clone.gameObject.GetComponent<ShotController>().SetVelocity();
+				
+				
+			}
 		}
 		controller.Move(moveDirection * Time.deltaTime);
 		transform.forward = facingDirection;
 
 		//firing
 
-		if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
-		{
-			Rigidbody clone;
-			nextFire = Time.time + fireRate;
-			clone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as Rigidbody;
-			clone.velocity = transform.TransformDirection (Vector3.forward * 10);
 
-
-
-		}
 	}
 }

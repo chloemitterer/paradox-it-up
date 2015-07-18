@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3314370}
   - 135: {fileID: 13514370}
   - 23: {fileID: 2314370}
-  - 54: {fileID: 5414370}
+  - 54: {fileID: 5446254}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -86,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114370}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5414370
+--- !u!54 &5446254
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

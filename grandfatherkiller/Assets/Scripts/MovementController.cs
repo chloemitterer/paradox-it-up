@@ -42,8 +42,13 @@ public class MovementController : MonoBehaviour {
 
 		if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
 		{
+			Rigidbody clone;
 			nextFire = Time.time + fireRate;
-			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+			clone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as Rigidbody;
+			clone.velocity = transform.TransformDirection (Vector3.forward * 10);
+
+
+
 		}
 	}
 }

@@ -10,6 +10,12 @@ public class MovementController : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	private Vector3 facingDirection = Vector3.forward;
 
+	public GameObject shot;
+	public Transform shotSpawn;
+	public float fireRate;
+	
+	private float nextFire;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -31,5 +37,13 @@ public class MovementController : MonoBehaviour {
 			moveDirection *= maxSpeed;
 		}
 		controller.Move(moveDirection * Time.deltaTime);
+
+		//firing
+
+		if (inputDevice.RightTrigger.IsPressed && Time.time > nextFire)
+		{
+			nextFire = Time.time + fireRate;
+			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+		}
 	}
 }

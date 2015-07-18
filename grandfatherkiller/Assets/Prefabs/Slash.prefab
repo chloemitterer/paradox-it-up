@@ -12,7 +12,7 @@ GameObject:
   - 54: {fileID: 5493904}
   m_Layer: 0
   m_Name: Slash
-  m_TagString: Shot
+  m_TagString: Slash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ GameObject:
   - 23: {fileID: 2393904}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Slash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 193904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: .800000012}
-  m_LocalScale: {x: 2.5, y: .100000001, z: 1.5}
+  m_LocalScale: {x: .100000001, y: .00999999978, z: 1.5}
   m_Children: []
   m_Father: {fileID: 493902}
   m_RootOrder: 0
@@ -96,7 +96,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -112,7 +112,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: .200000003, y: .0500000007, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11493904
 MonoBehaviour:
@@ -122,11 +122,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 193902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 189db264b32faa0418139744703da4ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b77000bb7d2fb64894ea332ba6f7754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotSpeed: 0
-  lifeTime: .25
+  slashSpeed: 20
+  lifeTime: .5
+  playerNumber: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

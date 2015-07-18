@@ -55,10 +55,11 @@ public class MovementController : MonoBehaviour {
 			// Melee
 			if (inputDevice.Action2.WasPressed && Time.time > nextAttack) {
 				nextAttack = Time.time + meleeTime;
-				GameObject zBullet = (GameObject)Instantiate (slash, shotSpawn.position, shotSpawn.rotation);
-				zBullet.GetComponent<ShotController> ().SetVelocity ();
-				zBullet.GetComponent<ShotController> ().playerNumber = playerNumber;
-				zBullet.transform.parent = transform;
+				GameObject zSlash = (GameObject)Instantiate (slash, shotSpawn.position, shotSpawn.rotation);
+				zSlash.transform.Rotate(transform.up * -90.0f);
+				zSlash.GetComponent<SlashController> ().SetAngularVelocity ();
+				zSlash.GetComponent<SlashController> ().playerNumber = playerNumber;
+				zSlash.transform.parent = transform;
 			}
 		}
 		controller.Move(moveDirection * Time.deltaTime);
@@ -78,7 +79,7 @@ public class MovementController : MonoBehaviour {
 			}
 			Destroy(other.transform.parent.gameObject);
 		} else if (other.tag == "Slash") {
-			if (other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber != playerNumber) {
+			if (other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber != playerNumber) {
 				health -= 1;
 				if (health <= 0) {
 					dead = true;

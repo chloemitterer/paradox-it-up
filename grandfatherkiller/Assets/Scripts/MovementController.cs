@@ -27,16 +27,17 @@ public class MovementController : MonoBehaviour {
 
 		var inputDevice = (InputManager.Devices.Count + 1 > playerNumber) ? InputManager.Devices[playerNumber - 1] : null;
 		if (inputDevice != null) {
-			moveDirection = new Vector3(inputDevice.Direction.X, 0, inputDevice.Direction.Y);
+			moveDirection = Vector3.Normalize(new Vector3(inputDevice.Direction.X, 0, inputDevice.Direction.Y));
 			if (inputDevice.RightStick.X != 0 && inputDevice.RightStick.Y != 0) {
-				facingDirection = new Vector3(inputDevice.RightStick.X, 0, inputDevice.RightStick.Y);
-			} else {
+				facingDirection = Vector3.Normalize(new Vector3(inputDevice.RightStick.X, 0, inputDevice.RightStick.Y));
+			} else if (moveDirection != Vector3.zero) {
 				facingDirection = moveDirection;
 			}
 			// moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= maxSpeed;
 		}
 		controller.Move(moveDirection * Time.deltaTime);
+		transform.forward = facingDirection;
 
 		//firing
 

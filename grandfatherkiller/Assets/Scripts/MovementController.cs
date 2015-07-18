@@ -8,6 +8,7 @@ public class MovementController : MonoBehaviour {
 	public int playerNumber = 1;
 
 	private Vector3 moveDirection = Vector3.zero;
+	private Vector3 facingDirection = Vector3.forward;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,11 @@ public class MovementController : MonoBehaviour {
 		var inputDevice = (InputManager.Devices.Count + 1 > playerNumber) ? InputManager.Devices[playerNumber - 1] : null;
 		if (inputDevice != null) {
 			moveDirection = new Vector3(inputDevice.Direction.X, 0, inputDevice.Direction.Y);
+			if (inputDevice.RightStick.X != 0 && inputDevice.RightStick.Y != 0) {
+				facingDirection = new Vector3(inputDevice.RightStick.X, 0, inputDevice.RightStick.Y);
+			} else {
+				facingDirection = moveDirection;
+			}
 			moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= maxSpeed;
 		}

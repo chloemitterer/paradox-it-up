@@ -1,12 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class granddad : MonoBehaviour {
+public class Civilian : MonoBehaviour {
 
-	public int maxHealth = 3;
+	public int maxHealth = 1;
 	private int health;
 	private bool dead;
-	public int grandadNum;
 
 	// Use this for initialization
 	void Start () {
@@ -46,20 +45,7 @@ public class granddad : MonoBehaviour {
 		} 
 	}
 	
-	void die(){
-		gameObject.SetActive (false);
-		if (grandadNum == 1) {
-			//game over, player 2 wins
-			PlayerPrefs.SetInt("Winner", PlayerPrefs.GetInt("Winner")+2);
-			Invoke("endGame", 2);
-		} else if (grandadNum == 2) {
-			//game over, player 1 wins
-			PlayerPrefs.SetInt("Winner", PlayerPrefs.GetInt("Winner")+1);
-			Invoke("endGame", 2);
-		}
-	}
-
-	void endGame() {
-		Application.LoadLevel("end");
+	void die() {
+		Destroy(gameObject);
 	}
 }

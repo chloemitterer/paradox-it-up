@@ -60,7 +60,7 @@ public class MovementController : MonoBehaviour {
 			}
 
 			// Melee
-			if (inputDevice.Action2.WasPressed && Time.time > nextAttack) {
+			if (inputDevice.RightBumper.WasPressed && Time.time > nextAttack) {
 				nextAttack = Time.time + meleeTime;
 				GameObject zSlash = (GameObject)Instantiate (slash, meleeSpawn.position, meleeSpawn.rotation);
 				zSlash.transform.Rotate(transform.up * -90.0f);

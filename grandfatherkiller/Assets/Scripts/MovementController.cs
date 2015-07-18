@@ -8,7 +8,7 @@ public class MovementController : MonoBehaviour {
 	public int playerNumber = 1;
 
 	private Vector3 moveDirection = Vector3.zero;
-	private Vector3 facingDirection = Vector3.forward;
+	private Vector3 facingDirection = Vector3.left;
 
 	public GameObject shot;
 	public GameObject slash;

@@ -12,6 +12,7 @@ public class granddad : MonoBehaviour {
 	void Start () {
 		health = maxHealth;
 		dead = false;
+		PlayerPrefs.SetInt("Winner", 0);
 	}
 	
 	// Update is called once per frame

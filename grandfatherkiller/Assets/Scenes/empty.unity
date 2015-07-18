@@ -111,6 +111,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 373854298}
   fireTime: 1
   meleeTime: .5
+  maxHealth: 3
 --- !u!143 &373854295
 CharacterController:
   m_ObjectHideFlags: 0
@@ -573,6 +574,7 @@ MonoBehaviour:
   shotSpawn: {fileID: 1572494593}
   fireTime: 1
   meleeTime: .5
+  maxHealth: 3
 --- !u!143 &1572494590
 CharacterController:
   m_ObjectHideFlags: 0

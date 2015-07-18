@@ -30,7 +30,7 @@ GameObject:
   - 23: {fileID: 2393904}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotSpeed: 0
   lifeTime: .25
+  playerNumber: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

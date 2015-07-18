@@ -140,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 178710362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: .479999989}
+  m_LocalPosition: {x: -0, y: 0, z: .699999988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1572494593}
@@ -223,7 +223,7 @@ MonoBehaviour:
   maxSpeed: 8
   playerNumber: 1
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
-  slash: {fileID: 193902, guid: f48f765b3e0f2a746ade4e0834b473e5, type: 2}
+  slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
   shotSpawn: {fileID: 1291600512}
   meleeSpawn: {fileID: 1864168039}
   fireTime: 1
@@ -435,7 +435,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 76e03b972867b4541a69807b0c110c12, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -650,7 +650,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 76e03b972867b4541a69807b0c110c12, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1169,8 +1169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 2
-  playerNum: 0
-  winner: 0
 --- !u!23 &817302394
 Renderer:
   m_ObjectHideFlags: 0
@@ -1565,6 +1563,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 07ac4e9ff9b23c54daea6048287d989c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76e03b972867b4541a69807b0c110c12, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07ac4e9ff9b23c54daea6048287d989c, type: 3}
   m_RootGameObject: {fileID: 477550905}
@@ -1970,6 +1972,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 07ac4e9ff9b23c54daea6048287d989c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76e03b972867b4541a69807b0c110c12, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07ac4e9ff9b23c54daea6048287d989c, type: 3}
   m_RootGameObject: {fileID: 465917916}
@@ -2365,7 +2371,7 @@ MonoBehaviour:
   maxSpeed: 8
   playerNumber: 2
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
-  slash: {fileID: 193902, guid: f48f765b3e0f2a746ade4e0834b473e5, type: 2}
+  slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
   shotSpawn: {fileID: 403249363}
   meleeSpawn: {fileID: 178710363}
   fireTime: 1
@@ -2621,7 +2627,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1864168038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: .479999989}
+  m_LocalPosition: {x: 0, y: 0, z: .699999988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 373854298}
@@ -2857,8 +2863,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 1
-  playerNum: 0
-  winner: 0
 --- !u!23 &1996344481
 Renderer:
   m_ObjectHideFlags: 0

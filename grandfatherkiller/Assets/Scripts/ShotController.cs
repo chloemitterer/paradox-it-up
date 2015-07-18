@@ -5,6 +5,7 @@ public class ShotController : MonoBehaviour {
 
 	public float shotSpeed;
 	public float lifeTime;
+	public int playerNumber;
 
 	// Use this for initialization
 	void Start () {

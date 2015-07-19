@@ -62,7 +62,7 @@ public class MovementController : MonoBehaviour {
 				GameObject zBullet = (GameObject)Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 				zBullet.GetComponent<ShotController> ().SetVelocity ();
 				zBullet.GetComponent<ShotController> ().playerNumber = playerNumber;
-				AudioSource.PlayClipAtPoint (sfxShot, shotSpawn.position, 0.5f);
+				AudioSource.PlayClipAtPoint (sfxShot, shotSpawn.position, 1.0f);
 			}
 
 			// Melee
@@ -72,7 +72,7 @@ public class MovementController : MonoBehaviour {
 				zSlash.transform.Rotate(transform.up * -90.0f);
 				zSlash.GetComponent<SlashController> ().SetAngularVelocity ();
 				zSlash.GetComponent<SlashController> ().playerNumber = playerNumber;
-				AudioSource.PlayClipAtPoint (sfxMelee, shotSpawn.position, 0.5f);
+				AudioSource.PlayClipAtPoint (sfxMelee, shotSpawn.position, 1.0f);
 				zSlash.transform.parent = transform;
 
 			}

@@ -853,8 +853,8 @@ MonoBehaviour:
   meleeTime: .5
   maxHealth: 3
   respawnTime: 2
-  sfxShot: {fileID: 0}
-  sfxMelee: {fileID: 0}
+  sfxShot: {fileID: 8300000, guid: 7e237a1e9b6c4444a846632f174a49a1, type: 3}
+  sfxMelee: {fileID: 8300000, guid: e5f78e959f116e4418a63b27ee8d8ec0, type: 3}
 --- !u!195 &373854294
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6193,8 +6193,8 @@ MonoBehaviour:
   meleeTime: .5
   maxHealth: 3
   respawnTime: 2
-  sfxShot: {fileID: 0}
-  sfxMelee: {fileID: 0}
+  sfxShot: {fileID: 8300000, guid: 7e237a1e9b6c4444a846632f174a49a1, type: 3}
+  sfxMelee: {fileID: 8300000, guid: e5f78e959f116e4418a63b27ee8d8ec0, type: 3}
 --- !u!195 &1572494590
 NavMeshAgent:
   m_ObjectHideFlags: 0

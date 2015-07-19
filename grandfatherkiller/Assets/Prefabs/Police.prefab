@@ -165,11 +165,26 @@ GameObject:
   - 136: {fileID: 13639908}
   - 23: {fileID: 2339908}
   - 195: {fileID: 19539908}
-  - 114: {fileID: 11439908}
   - 114: {fileID: 11476036}
   - 114: {fileID: 11465468}
+  - 114: {fileID: 11467004}
   m_Layer: 0
   m_Name: Police
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &166990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 466990}
+  m_Layer: 0
+  m_Name: shotSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,8 +330,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438570}
+  - {fileID: 466990}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &466990
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.10699999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 439908}
+  m_RootOrder: 1
 --- !u!23 &2338552
 Renderer:
   m_ObjectHideFlags: 1
@@ -386,18 +414,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11439908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2720e002f295d184a8bd0dbd3ac7ed6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  searchRange: 5
 --- !u!114 &11465468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,7 +425,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3921052e6ed104bb84a7658a279b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 10
+--- !u!114 &11467004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb87c05f1dff9994daf3b0938555d558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  searchRange: 5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  granddad1: {fileID: 0}
+  granddad2: {fileID: 0}
+  fireTime: 3
+  shotSpawn: {fileID: 0}
+  shot: {fileID: 0}
+  sfxShot: {fileID: 0}
+  searchTime: 3
 --- !u!114 &11476036
 MonoBehaviour:
   m_ObjectHideFlags: 1

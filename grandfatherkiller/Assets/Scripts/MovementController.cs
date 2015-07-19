@@ -86,16 +86,6 @@ public class MovementController : MonoBehaviour {
 		controller.Move(((moveDirection * Time.deltaTime)/(1+(moveDirection - facingDirection).magnitude))* maxSpeed);
 		transform.forward = facingDirection;
 
-		if (PlayerPrefs.GetInt ("player1CivKills") >= 3 && playerNumber == 1) {
-			dead = true;
-			PlayerPrefs.SetInt ("player1CivKills", 0);
-		}
-
-		if (PlayerPrefs.GetInt ("player2CivKills") >= 3 && playerNumber == 2) {
-			dead = true;
-			PlayerPrefs.SetInt ("player2CivKills", 0);
-		}
-
 		if (dead) {
 			die ();
 		}

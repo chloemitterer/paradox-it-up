@@ -16,4 +16,10 @@ public class ShotController : MonoBehaviour {
 	{
 		rigidbody.velocity = transform.forward * shotSpeed;
 	}
+
+	void onCollisionEnter(Collider other) {
+		if (other.tag == "Wall") {
+			Destroy(gameObject);
+		}
+	}
 }

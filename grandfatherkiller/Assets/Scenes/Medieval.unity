@@ -5862,7 +5862,7 @@ MonoBehaviour:
   playerNumber: 1
   shot: {fileID: 114372, guid: 1fd5429d3dbe6424abb67a4d73ee0a00, type: 2}
   slash: {fileID: 193902, guid: 85a99a7087b397145b2592ede4413e4c, type: 2}
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
   shotSpawn: {fileID: 1125478061}
   meleeSpawn: {fileID: 1300415177}
   fireTime: 1
@@ -6442,7 +6442,7 @@ MonoBehaviour:
   playerNumber: 2
   shot: {fileID: 114372, guid: 1fd5429d3dbe6424abb67a4d73ee0a00, type: 2}
   slash: {fileID: 193902, guid: 85a99a7087b397145b2592ede4413e4c, type: 2}
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
   shotSpawn: {fileID: 1431285687}
   meleeSpawn: {fileID: 1451691269}
   fireTime: 1
@@ -7394,7 +7394,7 @@ MonoBehaviour:
   player2: {fileID: 1451691263}
   granddad1: {fileID: 602345299}
   granddad2: {fileID: 710407732}
-  fireTime: 3
+  fireTime: 2
   shotSpawn: {fileID: 130574394}
   shot: {fileID: 114372, guid: 1fd5429d3dbe6424abb67a4d73ee0a00, type: 2}
   sfxShot: {fileID: 8300000, guid: 453af503208976a45a6f9289bfa4d298, type: 3}

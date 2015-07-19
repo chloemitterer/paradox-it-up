@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &70016293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,6 +1051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &332296937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,6 +2297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!23 &602345305
 Renderer:
   m_ObjectHideFlags: 0
@@ -2668,6 +2671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 2
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!23 &710407738
 Renderer:
   m_ObjectHideFlags: 0
@@ -3291,6 +3295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &830415972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3607,6 +3612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &896024892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4161,6 +4167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &992734593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5855,6 +5862,7 @@ MonoBehaviour:
   playerNumber: 1
   shot: {fileID: 114372, guid: 1fd5429d3dbe6424abb67a4d73ee0a00, type: 2}
   slash: {fileID: 193902, guid: 85a99a7087b397145b2592ede4413e4c, type: 2}
+  bloodSplatter: {fileID: 0}
   shotSpawn: {fileID: 1125478061}
   meleeSpawn: {fileID: 1300415177}
   fireTime: 1
@@ -6434,6 +6442,7 @@ MonoBehaviour:
   playerNumber: 2
   shot: {fileID: 114372, guid: 1fd5429d3dbe6424abb67a4d73ee0a00, type: 2}
   slash: {fileID: 193902, guid: 85a99a7087b397145b2592ede4413e4c, type: 2}
+  bloodSplatter: {fileID: 0}
   shotSpawn: {fileID: 1431285687}
   meleeSpawn: {fileID: 1451691269}
   fireTime: 1
@@ -7322,6 +7331,10 @@ Prefab:
       propertyPath: maxHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11480218, guid: 011a3366d82114d41bd86b06600592a7, type: 2}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 011a3366d82114d41bd86b06600592a7, type: 2}
   m_RootGameObject: {fileID: 1650306121}
@@ -7399,6 +7412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1650306125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7523,6 +7537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1662041215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7714,6 +7729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1698386919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7838,6 +7854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1704750477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8523,6 +8540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1874257459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8952,6 +8970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1929394190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9347,6 +9366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &1983995278
 MonoBehaviour:
   m_ObjectHideFlags: 0

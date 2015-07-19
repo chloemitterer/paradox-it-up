@@ -329,7 +329,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 42eed0833a29049489d24c380aa29b4c, type: 2}
+  - {fileID: 2100000, guid: a06c980dd331e444aa7ca2021f87682a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -410,6 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &11476036
 MonoBehaviour:
   m_ObjectHideFlags: 1

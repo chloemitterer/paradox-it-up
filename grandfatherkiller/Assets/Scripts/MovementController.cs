@@ -12,6 +12,7 @@ public class MovementController : MonoBehaviour {
 
 	public GameObject shot;
 	public GameObject slash;
+	public GameObject bloodSplatter;
 	public Transform shotSpawn;
 	public Transform meleeSpawn;
 	public float fireTime = 0.5f;
@@ -24,6 +25,8 @@ public class MovementController : MonoBehaviour {
 	private float nextAttack;
 	private int health;
 	private bool dead;
+
+
 
 	Vector3 initialPosition;
 	Quaternion initialRotation;
@@ -105,6 +108,10 @@ public class MovementController : MonoBehaviour {
 		if (other.tag == "Shot") {
 			if (other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber != playerNumber) {
 				health -= 1;
+				Vector3 bloodSplatterPos = transform.position;
+				Quaternion bloodSplatterRotation = Quaternion.Euler(90, Random.Range(0, 360), 0);
+				bloodSplatterPos.y = 0.01f;
+				GameObject zBlood = (GameObject)Instantiate (bloodSplatter, bloodSplatterPos, bloodSplatterRotation);
 				if (health <= 0) {
 					dead = true;
 				}
@@ -114,6 +121,10 @@ public class MovementController : MonoBehaviour {
 		} else if (other.tag == "Slash") {
 			if (other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber != playerNumber) {
 				health -= 1;
+				Vector3 bloodSplatterPos = transform.position;
+				Quaternion bloodSplatterRotation = Quaternion.Euler( 90, Random.Range(0, 360), 0);
+				bloodSplatterPos.y = 0.01f;
+				GameObject zBlood = (GameObject)Instantiate (bloodSplatter, bloodSplatterPos, bloodSplatterRotation);
 				if (health <= 0) {
 					dead = true;
 				}

@@ -7,6 +7,7 @@ public class granddad : MonoBehaviour {
 	private int health;
 	private bool dead;
 	public int grandadNum;
+	public GameObject bloodSplatter;
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +32,11 @@ public class granddad : MonoBehaviour {
 		if (other.tag == "Shot") {
 			 
 				health -= 1;
-				if (health <= 0) {
+			Vector3 bloodSplatterPos = transform.position;
+			Quaternion bloodSplatterRotation = Quaternion.Euler(90, Random.Range(0, 360), 0);
+			bloodSplatterPos.y = 0.01f;
+			GameObject zBlood = (GameObject)Instantiate (bloodSplatter, bloodSplatterPos, bloodSplatterRotation);
+			if (health <= 0) {
 					dead = true;
 				}
 				Destroy(other.transform.parent.gameObject);
@@ -40,7 +45,11 @@ public class granddad : MonoBehaviour {
 		} else if (other.tag == "Slash") {
 
 				health -= 1;
-				if (health <= 0) {
+			Vector3 bloodSplatterPos = transform.position;
+			Quaternion bloodSplatterRotation = Quaternion.Euler(90, Random.Range(0, 360), 0);
+			bloodSplatterPos.y = 0.01f;
+			GameObject zBlood = (GameObject)Instantiate (bloodSplatter, bloodSplatterPos, bloodSplatterRotation);
+			if (health <= 0) {
 					dead = true;
 				}
 

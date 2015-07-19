@@ -265,7 +265,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -676,7 +676,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -954,6 +954,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &123054575
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1354,6 +1357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &156003576
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2304,6 +2310,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &268810308
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2944,6 +2953,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
   m_RootGameObject: {fileID: 607452705}
@@ -3194,6 +3207,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &414548154
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3500,6 +3516,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &505347141
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4401,6 +4420,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &673385037
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4567,6 +4589,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &676757373
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5193,6 +5218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &789298475
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6842,6 +6870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &1040409667
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7931,6 +7962,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &1276381811
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8879,7 +8913,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -8995,7 +9029,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9154,6 +9188,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
   m_RootGameObject: {fileID: 754123323}
@@ -9667,6 +9705,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
   m_RootGameObject: {fileID: 901219756}
@@ -11790,6 +11832,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c06ed1cc2d16454fa1510d30918a614, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de8d28cab92fe0f46ae793a45b1b283a, type: 3}
   m_RootGameObject: {fileID: 839698456}
@@ -12302,6 +12348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &2120274242
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12555,6 +12604,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &2133572408
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12731,6 +12783,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
+  runSpeed: 4.5
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!195 &2141857771
 NavMeshAgent:
   m_ObjectHideFlags: 0

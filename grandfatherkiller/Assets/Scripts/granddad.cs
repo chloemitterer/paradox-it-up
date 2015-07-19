@@ -61,11 +61,11 @@ public class granddad : MonoBehaviour {
 		if (grandadNum == 1) {
 			//game over, player 2 wins
 			PlayerPrefs.SetInt("Winner", PlayerPrefs.GetInt("Winner")+2);
-			Invoke("endGame", 2);
+			Invoke("endGame", 0.5f);
 		} else if (grandadNum == 2) {
 			//game over, player 1 wins
 			PlayerPrefs.SetInt("Winner", PlayerPrefs.GetInt("Winner")+1);
-			Invoke("endGame", 2);
+			Invoke("endGame", 0.5f);
 		}
 	}
 

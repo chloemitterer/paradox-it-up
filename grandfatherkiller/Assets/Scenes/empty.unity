@@ -6188,7 +6188,7 @@ MonoBehaviour:
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
   shotSpawn: {fileID: 403249363}
-  meleeSpawn: {fileID: 178710363}
+  meleeSpawn: {fileID: 1572494593}
   fireTime: 1
   meleeTime: .5
   maxHealth: 3

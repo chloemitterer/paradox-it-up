@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 9b5ab95aeb7c37f44a2e53e085df1bc5, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -954,9 +954,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &123054575
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1357,9 +1354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &156003576
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2310,9 +2304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &268810308
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3203,9 +3194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &414548154
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3512,9 +3500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &505347141
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4416,9 +4401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &673385037
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4585,9 +4567,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &676757373
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5214,9 +5193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &789298475
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6866,9 +6842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &1040409667
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7958,9 +7931,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &1276381811
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11362,7 +11332,6 @@ GameObject:
   - 92: {fileID: 1955388822}
   - 124: {fileID: 1955388821}
   - 81: {fileID: 1955388820}
-  - 45: {fileID: 1955388825}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11435,14 +11404,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!45 &1955388825
-Skybox:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1955388819}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 9b5ab95aeb7c37f44a2e53e085df1bc5, type: 2}
 --- !u!1 &1957398363
 GameObject:
   m_ObjectHideFlags: 0
@@ -12341,9 +12302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &2120274242
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12597,9 +12555,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &2133572408
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -12776,9 +12731,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 5
-  runSpeed: 4.5
-  player1: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!195 &2141857771
 NavMeshAgent:
   m_ObjectHideFlags: 0

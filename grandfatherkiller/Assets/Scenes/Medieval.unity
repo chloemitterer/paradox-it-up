@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 9b5ab95aeb7c37f44a2e53e085df1bc5, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1250,7 +1250,7 @@ Transform:
   - {fileID: 1816462783}
   - {fileID: 650207191}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
 --- !u!65 &174791942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3459,7 +3459,7 @@ Transform:
   m_LocalScale: {x: 5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 34
 --- !u!1 &634357285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,7 +3889,7 @@ Transform:
   m_Children:
   - {fileID: 1766150542}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
 --- !u!114 &710407734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5314,7 +5314,7 @@ Transform:
   m_Children:
   - {fileID: 1168661495}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &899517747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5809,7 +5809,7 @@ Transform:
   m_Children:
   - {fileID: 1176497668}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!114 &992734592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7482,7 +7482,6 @@ GameObject:
   - 92: {fileID: 1235171072}
   - 124: {fileID: 1235171071}
   - 81: {fileID: 1235171070}
-  - 45: {fileID: 1235171075}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7555,14 +7554,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!45 &1235171075
-Skybox:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1235171069}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1239290123
 GameObject:
   m_ObjectHideFlags: 0
@@ -8141,7 +8132,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!1 &1343303160
 GameObject:
   m_ObjectHideFlags: 0
@@ -10087,7 +10078,7 @@ Transform:
   - {fileID: 130574394}
   - {fileID: 2030849742}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!114 &1650306123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10595,7 +10586,7 @@ Transform:
   - {fileID: 515855973}
   - {fileID: 1365364732}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
 --- !u!65 &1704526349
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13458,7 +13449,7 @@ Transform:
   - {fileID: 1604807748}
   - {fileID: 2117487589}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
 --- !u!65 &2119844548
 BoxCollider:
   m_ObjectHideFlags: 0

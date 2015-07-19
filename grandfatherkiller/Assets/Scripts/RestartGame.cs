@@ -6,6 +6,16 @@ public class RestartGame : MonoBehaviour
 	
 	public void BeginGame () 
 	{
-		Application.LoadLevel ("empty");
+		Application.LoadLevel ("startscreen");
+	}
+
+	public void MedievalGame () 
+	{
+		Application.LoadLevel ("Medieval");
+	}
+
+	public void ModernGame () 
+	{
+		Application.LoadLevel ("Modern");
 	}
 }

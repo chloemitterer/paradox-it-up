@@ -17,7 +17,7 @@ public class MovementController : MonoBehaviour {
 	public Transform meleeSpawn;
 	public float fireTime = 0.5f;
 	public float meleeTime = 0.5f;
-	public int maxHealth = 3;
+	public int maxHealth = 2;
 	public float respawnTime = 2.0f;
 	public AudioClip sfxShot;
 	public AudioClip sfxMelee;

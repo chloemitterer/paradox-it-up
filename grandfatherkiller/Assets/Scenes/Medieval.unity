@@ -161,6 +161,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
   m_RootGameObject: {fileID: 674231726}
@@ -938,6 +942,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
   m_RootGameObject: {fileID: 2119844546}
@@ -1131,7 +1139,7 @@ GameObject:
   - 65: {fileID: 174791942}
   m_Layer: 0
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1151,7 +1159,7 @@ Transform:
   - {fileID: 1816462783}
   - {fileID: 650207191}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 36
 --- !u!65 &174791942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2318,7 +2326,7 @@ GameObject:
   - 65: {fileID: 479529016}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2545,6 +2553,10 @@ Prefab:
     - target: {fileID: 100006, guid: b28096fa390dd1a4bbf367216b5d102b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b28096fa390dd1a4bbf367216b5d102b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b28096fa390dd1a4bbf367216b5d102b, type: 3}
@@ -2781,7 +2793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1 &544485965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,7 +3295,7 @@ GameObject:
   - 65: {fileID: 622846631}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3580,7 +3592,7 @@ GameObject:
   - 65: {fileID: 661448723}
   m_Layer: 0
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3641,7 +3653,7 @@ GameObject:
   - 65: {fileID: 674231728}
   m_Layer: 0
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3661,7 +3673,7 @@ Transform:
   - {fileID: 1565566857}
   - {fileID: 1603933886}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 37
 --- !u!65 &674231728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4390,7 +4402,7 @@ GameObject:
   - 65: {fileID: 808131470}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4677,6 +4689,10 @@ Prefab:
     - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
@@ -5687,7 +5703,7 @@ Transform:
   m_Children:
   - {fileID: 1176497668}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!114 &992734592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5802,7 +5818,7 @@ GameObject:
   - 95: {fileID: 995659604}
   m_Layer: 0
   m_Name: sword
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6251,7 +6267,7 @@ GameObject:
   - 65: {fileID: 1075823046}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6460,7 +6476,7 @@ GameObject:
   - 65: {fileID: 1115965488}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6789,6 +6805,10 @@ Prefab:
     - target: {fileID: 100010, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
@@ -7786,8 +7806,8 @@ MonoBehaviour:
   meleeSpawn: {fileID: 1300415177}
   fireTime: 1
   meleeTime: .5
-  maxHealth: 3
-  respawnTime: 2
+  maxHealth: 2
+  respawnTime: 1
   sfxShot: {fileID: 8300000, guid: 453af503208976a45a6f9289bfa4d298, type: 3}
   sfxMelee: {fileID: 8300000, guid: 7eabe1d2dcbb92d4888e576721e2ce0f, type: 3}
 --- !u!23 &1300415181
@@ -8250,7 +8270,7 @@ GameObject:
   - 65: {fileID: 1379740451}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8404,6 +8424,10 @@ Prefab:
     - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29cb75d880594f54f9f7522f64e00f3a, type: 3}
@@ -8697,8 +8721,8 @@ MonoBehaviour:
   meleeSpawn: {fileID: 1451691269}
   fireTime: 1
   meleeTime: .5
-  maxHealth: 3
-  respawnTime: 2
+  maxHealth: 2
+  respawnTime: 1
   sfxShot: {fileID: 8300000, guid: 453af503208976a45a6f9289bfa4d298, type: 3}
   sfxMelee: {fileID: 8300000, guid: 7eabe1d2dcbb92d4888e576721e2ce0f, type: 3}
 --- !u!23 &1451691267
@@ -8898,7 +8922,7 @@ GameObject:
   - 65: {fileID: 1525649069}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9600,7 +9624,7 @@ GameObject:
   - 65: {fileID: 1616721738}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10414,7 +10438,7 @@ GameObject:
   - 65: {fileID: 1704526349}
   m_Layer: 0
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11088,7 +11112,7 @@ GameObject:
   - 65: {fileID: 1816133443}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11475,7 +11499,7 @@ GameObject:
   - 65: {fileID: 1882283074}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12188,7 +12212,7 @@ GameObject:
   - 65: {fileID: 1980060604}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12255,7 +12279,7 @@ Transform:
   m_LocalScale: {x: 8, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 38
 --- !u!1 &1981761856
 GameObject:
   m_ObjectHideFlags: 0
@@ -13205,7 +13229,7 @@ GameObject:
   - 65: {fileID: 2119844548}
   m_Layer: 0
   m_Name: barrel
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13225,7 +13249,7 @@ Transform:
   - {fileID: 1604807748}
   - {fileID: 2117487589}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 35
 --- !u!65 &2119844548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13268,7 +13292,7 @@ GameObject:
   - 65: {fileID: 2132921418}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8

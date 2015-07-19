@@ -187,7 +187,7 @@ MonoBehaviour:
   playerNumber: 2
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
   shotSpawn: {fileID: 718521658}
   meleeSpawn: {fileID: 36875608}
   fireTime: 1
@@ -2057,7 +2057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &279287115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2804,7 +2804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 2
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!23 &505347143
 Renderer:
   m_ObjectHideFlags: 0
@@ -2965,7 +2965,7 @@ Transform:
   - {fileID: 2119744444}
   - {fileID: 854084983}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!136 &571860446
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3014,7 +3014,7 @@ MonoBehaviour:
   playerNumber: 1
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
   shotSpawn: {fileID: 144888904}
   meleeSpawn: {fileID: 571860445}
   fireTime: 1
@@ -3428,7 +3428,7 @@ Transform:
   m_Children:
   - {fileID: 671651732}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &673385034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7257,6 +7257,10 @@ Prefab:
       propertyPath: granddad2
       value: 
       objectReference: {fileID: 505347137}
+    - target: {fileID: 11465468, guid: 3a61da0139f4c11448363edc3e259fc0, type: 2}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a61da0139f4c11448363edc3e259fc0, type: 2}
   m_RootGameObject: {fileID: 279287111}
@@ -8838,7 +8842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 1
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!23 &2133572410
 Renderer:
   m_ObjectHideFlags: 0

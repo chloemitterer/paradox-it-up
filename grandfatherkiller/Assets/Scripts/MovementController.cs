@@ -56,7 +56,7 @@ public class MovementController : MonoBehaviour {
 				facingDirection = moveDirection;
 			}
 			// moveDirection = transform.TransformDirection(moveDirection);
-			moveDirection *= maxSpeed;
+
 
 			// Firing
 			if (inputDevice.RightTrigger.IsPressed && Time.time > nextAttack)
@@ -80,7 +80,7 @@ public class MovementController : MonoBehaviour {
 
 			}
 		}
-		controller.Move(moveDirection * Time.deltaTime);
+		controller.Move(((moveDirection * Time.deltaTime)/(1+(moveDirection - facingDirection).magnitude))* maxSpeed);
 		transform.forward = facingDirection;
 
 		if (PlayerPrefs.GetInt ("player1CivKills") >= 3 && playerNumber == 1) {

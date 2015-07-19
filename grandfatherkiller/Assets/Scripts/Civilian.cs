@@ -27,19 +27,39 @@ public class Civilian : MonoBehaviour {
 		if (dead)
 			return;
 		if (other.tag == "Shot") {
-			 
+
 				health -= 1;
 				if (health <= 0) {
 					dead = true;
+
+				if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 1)
+				{
+					PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
+				}
+				if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 2)
+				{
+					PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
+				}
 				}
 				Destroy(other.transform.parent.gameObject);
 
 			
 		} else if (other.tag == "Slash") {
+				
+
 
 				health -= 1;
 				if (health <= 0) {
 					dead = true;
+
+				if(other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber == 1)
+				{
+					PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
+				}
+				if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 2)
+				{
+					PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
+				}
 				}
 
 		} 

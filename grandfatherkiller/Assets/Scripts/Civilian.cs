@@ -56,7 +56,7 @@ public class Civilian : MonoBehaviour {
 				{
 					PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
 				}
-				if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 2)
+				if(other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber == 2)
 				{
 					PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
 				}

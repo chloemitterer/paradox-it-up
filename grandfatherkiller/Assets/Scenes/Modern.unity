@@ -187,7 +187,7 @@ MonoBehaviour:
   playerNumber: 2
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
   shotSpawn: {fileID: 718521658}
   meleeSpawn: {fileID: 36875608}
   fireTime: 1
@@ -297,7 +297,7 @@ GameObject:
   - 65: {fileID: 53513910}
   m_Layer: 0
   m_Name: car
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -690,7 +690,7 @@ GameObject:
   - 65: {fileID: 114348071}
   m_Layer: 0
   m_Name: car
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1035,7 +1035,7 @@ GameObject:
   - 23: {fileID: 148066529}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!114 &279287115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 2
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!23 &505347143
 Renderer:
   m_ObjectHideFlags: 0
@@ -3488,7 +3488,7 @@ MonoBehaviour:
   playerNumber: 1
   shot: {fileID: 114372, guid: 39bc35cb5b8acc84fbfc17a44f778af0, type: 2}
   slash: {fileID: 193902, guid: c3bda7f249dbbd0409ac423ee6206c0c, type: 2}
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
   shotSpawn: {fileID: 144888904}
   meleeSpawn: {fileID: 571860445}
   fireTime: 1
@@ -3643,7 +3643,7 @@ Transform:
   - {fileID: 1104869908}
   - {fileID: 1456899015}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!95 &607452707
 Animator:
   serializedVersion: 3
@@ -4277,7 +4277,7 @@ GameObject:
   - 23: {fileID: 712914889}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4756,7 +4756,7 @@ GameObject:
   - 23: {fileID: 803729708}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6006,6 +6006,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
   m_RootGameObject: {fileID: 114348066}
@@ -6744,7 +6748,7 @@ GameObject:
   - 23: {fileID: 1246914463}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7528,7 +7532,7 @@ GameObject:
   - 23: {fileID: 1387442720}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7982,7 +7986,7 @@ GameObject:
   - 23: {fileID: 1565687422}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8260,6 +8264,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
   m_RootGameObject: {fileID: 53513905}
@@ -8306,7 +8314,7 @@ GameObject:
   - 23: {fileID: 1618298882}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8421,7 +8429,7 @@ Transform:
   - {fileID: 1995090630}
   - {fileID: 262982896}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!95 &1659961598
 Animator:
   serializedVersion: 3
@@ -8463,7 +8471,7 @@ GameObject:
   - 23: {fileID: 1689151295}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8672,7 +8680,7 @@ GameObject:
   - 23: {fileID: 1701671187}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8998,6 +9006,10 @@ Prefab:
       propertyPath: granddad2
       value: 
       objectReference: {fileID: 505347137}
+    - target: {fileID: 11465468, guid: 3a61da0139f4c11448363edc3e259fc0, type: 2}
+      propertyPath: bloodSplatter
+      value: 
+      objectReference: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a61da0139f4c11448363edc3e259fc0, type: 2}
   m_RootGameObject: {fileID: 279287111}
@@ -10691,7 +10703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   grandadNum: 1
-  bloodSplatter: {fileID: 0}
+  bloodSplatter: {fileID: 143752, guid: f064787d728759249bb226530dc50592, type: 2}
 --- !u!23 &2133572410
 Renderer:
   m_ObjectHideFlags: 0

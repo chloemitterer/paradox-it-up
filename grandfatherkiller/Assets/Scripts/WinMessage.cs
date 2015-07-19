@@ -11,9 +11,10 @@ public class WinMessage : MonoBehaviour
 	{
 		winnerText = GetComponent<Text> ();
 		if (PlayerPrefs.GetInt ("Winner") == 3) {
-			winnerText.text = "It was a draw!" ;
+			winnerText.text = "It was a draw!";
+		} else {
+			winnerText.text = "PLAYER " + PlayerPrefs.GetInt ("Winner") + " WINS";
 		}
-		winnerText.text = "PLAYER " + PlayerPrefs.GetInt("Winner") + " WINS" ;
 
 
 	}

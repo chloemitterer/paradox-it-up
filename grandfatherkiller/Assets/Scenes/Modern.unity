@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fedf9c1b053dcc3419329cf5e4e6d921, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -389,7 +389,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 50b9f474d57e6654a8d8ea447ba1ba1f, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -840,7 +840,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cd1eb0c4456e6254dbf2d4932eb95a67, type: 2}
+  - {fileID: 2100000, guid: 0455a3faf0481e049942f2e32a5b1535, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -6791,6 +6791,10 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0455a3faf0481e049942f2e32a5b1535, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
   m_RootGameObject: {fileID: 114348066}
@@ -9801,6 +9805,10 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50b9f474d57e6654a8d8ea447ba1ba1f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 041eb6fe63187ff4a9cf2019f8e1f510, type: 3}
   m_RootGameObject: {fileID: 53513905}

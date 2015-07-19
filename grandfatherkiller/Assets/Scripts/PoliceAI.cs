@@ -45,35 +45,40 @@ public class PoliceAI : MonoBehaviour {
 		float targetDistance = Mathf.Infinity;
 		GameObject target = null;
 		if (PlayerPrefs.GetInt ("player1CivKills") >= 1) {
-			Physics.Raycast(transform.position, player1.transform.position - transform.position, out hit);
-			if (hit.collider.gameObject == player1) {
-				target = player1;
-				targetDistance = hit.distance;
+			if (Physics.Raycast(transform.position, player1.transform.position - transform.position, out hit)) {
+
+				if (hit.collider.gameObject == player1) {
+					target = player1;
+					targetDistance = hit.distance;
+				}
 			}
 		}
 		if (PlayerPrefs.GetInt ("player2CivKills") >= 1) {
-			Physics.Raycast(transform.position, player2.transform.position - transform.position, out hit);
-			if (hit.collider.gameObject == player2) {
-				if (hit.distance < targetDistance) {
-					target = player2;
-					targetDistance = hit.distance;
+			if (Physics.Raycast(transform.position, player2.transform.position - transform.position, out hit)) {
+				if (hit.collider.gameObject == player2) {
+					if (hit.distance < targetDistance) {
+						target = player2;
+						targetDistance = hit.distance;
+					}
 				}
 			}
 		}
 		if (target == null) {		
 			if (PlayerPrefs.GetInt ("player1CivKills") >= 3) {
-				Physics.Raycast(transform.position, granddad1.transform.position - transform.position, out hit);
-				if (hit.collider.gameObject == granddad1) {
-					target = granddad1;
-					targetDistance = hit.distance;
+				if (Physics.Raycast(transform.position, granddad1.transform.position - transform.position, out hit)) {
+					if (hit.collider.gameObject == granddad1) {
+						target = granddad1;
+						targetDistance = hit.distance;
+					}
 				}
 			}
 			if (PlayerPrefs.GetInt ("player2CivKills") >= 3) {
-				Physics.Raycast(transform.position, granddad2.transform.position - transform.position, out hit);
-				if (hit.collider.gameObject == granddad2) {
-					if (hit.distance < targetDistance) {
-						target = granddad2;
-						targetDistance = hit.distance;
+				if (Physics.Raycast(transform.position, granddad2.transform.position - transform.position, out hit)) {
+					if (hit.collider.gameObject == granddad2) {
+						if (hit.distance < targetDistance) {
+							target = granddad2;
+							targetDistance = hit.distance;
+						}
 					}
 				}
 			}

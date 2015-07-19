@@ -28,49 +28,44 @@ public class Civilian : MonoBehaviour {
 		if (dead)
 			return;
 		if (other.tag == "Shot") {
-
-				health -= 1;
+			health -= 1;
 			Vector3 bloodSplatterPos = transform.position;
 			Quaternion bloodSplatterRotation = Quaternion.Euler(90, Random.Range(0, 360), 0);
 			bloodSplatterPos.y = 0.01f;
 			GameObject zBlood = (GameObject)Instantiate (bloodSplatter, bloodSplatterPos, bloodSplatterRotation);
+
+			if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 1)
+			{
+				PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
+			}
+			if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 2)
+			{
+				PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
+			}
+
 			if (health <= 0) {
-					dead = true;
-
-				if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 1)
-				{
-					PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
-				}
-				if(other.transform.parent.gameObject.GetComponent<ShotController>().playerNumber == 2)
-				{
-					PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
-				}
-				}
-				Destroy(other.transform.parent.gameObject);
-
-			
+				dead = true;
+			}
+			Destroy(other.transform.parent.gameObject);	
 		} else if (other.tag == "Slash") {
-				
-
-
-				health -= 1;
+			health -= 1;
 			Vector3 bloodSplatterPos = transform.position;
 			Quaternion bloodSplatterRotation = Quaternion.Euler(90, Random.Range(0, 360), 0);
 			bloodSplatterPos.y = 0.01f;
 			GameObject zBlood = (GameObject)Instantiate (bloodSplatter, bloodSplatterPos, bloodSplatterRotation);
+
+			if(other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber == 1)
+			{
+				PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
+			}
+			if(other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber == 2)
+			{
+				PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
+			}
+
 			if (health <= 0) {
-					dead = true;
-
-				if(other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber == 1)
-				{
-					PlayerPrefs.SetInt("player1CivKills", PlayerPrefs.GetInt("player1CivKills")+1);
-				}
-				if(other.transform.parent.gameObject.GetComponent<SlashController>().playerNumber == 2)
-				{
-					PlayerPrefs.SetInt("player2CivKills", PlayerPrefs.GetInt("player2CivKills")+1);
-				}
-				}
-
+				dead = true;
+			}
 		} 
 	}
 	
